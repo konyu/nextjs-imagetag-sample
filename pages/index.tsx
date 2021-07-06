@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
 
+import Image from 'next/image';
+
 export default function Home({
   allPostsData
 }: {
@@ -22,6 +24,11 @@ export default function Home({
       </Head>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
+        <Image src={"/images/profile.jpg"} width={200} height={200} />
+        <Image src={"/images/img.jpg"} width={1235 } height={823} sizes="100vw" layout="responsive"/>
+        <div style={{color:"gray", width: "20vw"}}>
+          <Image src={"/images/img.jpg"} width={1235 } height={823}  sizes="20vw"  layout="responsive"/>
+        </div>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
