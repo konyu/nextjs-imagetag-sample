@@ -1,5 +1,5 @@
 .container {
-  max-width: 36rem;
+  max-width: 1280px;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }
@@ -12,4 +12,22 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.cssgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 0.8em;
+  justify-content: center; /* 横方向は中央に */
+  border: 1px solid #ddd;
+  padding: 0.8em;
+  margin: 0 0 2em;
+}
+
+.cssgrid > div {
+  background: #ddd;
+  overflow: auto;
+  min-width: 0;
+  padding: 1em;
 }

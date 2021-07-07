@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import styles from '../components/layout.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
@@ -23,7 +24,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <h1 className={styles.h1} >タイトル</h1>
         <Image src={"/images/profile.jpg"} width={200} height={200} />
         <Image src={"/images/img.jpg"} width={1235 } height={823} sizes="100vw" layout="responsive"/>
         <div style={{color:"gray", width: "20vw"}}>
@@ -50,6 +51,34 @@ export default function Home({
           ))}
         </ul>
       </section>
+
+      <div className={styles.cssgrid}>
+        <div>
+            <h3>アイテム1</h3>
+            <Image src={"/images/img.jpg"} width={600} height={400} layout='responsive'/>
+            <p>適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。適当なテキストメッセージ。</p>
+        </div>
+        <div className={styles.item1}>
+            <h3>アイテム2</h3>
+            <Image src={"/images/img.jpg"} width={600} height={400} layout="responsive"/>
+            <p>適当なテキストメッセージ。</p>
+        </div>
+        <div className={styles.item1}>
+            <h3>アイテム3</h3>
+            <Image src={"/images/img.jpg"} width={600} height={400} layout="responsive"/>
+            <p>適当なテキストメッセージ。</p>
+        </div>
+        <div className={styles.item1}>
+            <h3>アイテム4</h3>
+            <Image src={"/images/img.jpg"} width={600} height={400} layout="responsive"/>
+            <p>適当なテキストメッセージ。</p>
+        </div>
+        <div className={styles.item1}>
+            <h3>アイテム5</h3>
+            <Image src={"/images/img.jpg"} width={600} height={400} layout="responsive"/>
+            <p>適当なテキストメッセージ。</p>
+        </div>
+      </div>
     </Layout>
   )
 }
