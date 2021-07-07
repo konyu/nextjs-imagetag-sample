@@ -1,10 +1,15 @@
 .container {
-  max-width: 1280px;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 中央寄せ */
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,20 +19,27 @@
   margin: 3rem 0 0;
 }
 
+/* カード型のグリッドレイアウト */
 .cssgrid {
+  /* グリッド表示の親要素 */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
   grid-gap: 0.8em;
-  justify-content: center; /* 横方向は中央に */
+  /* 装飾 */
   border: 1px solid #ddd;
   padding: 0.8em;
   margin: 0 0 2em;
 }
-
+/* カード表示内の装飾 */
 .cssgrid > div {
   background: #ddd;
-  overflow: auto;
-  min-width: 0;
   padding: 1em;
 }
+
+/* PC用向けのデザイン */
+@media screen and (min-width: 844px){
+   .h1 {
+     font-size: 3rem;
+   }
+ }
