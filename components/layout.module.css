@@ -1,7 +1,11 @@
 .container {
-  padding: 0 1rem;
+  /* レイアウトの最大幅を指定 */
+  max-width: 1280px;
+  /* コンテンツ全体の中央寄せ */
+  margin: 0 auto;
 }
 
+/* 中央寄せ */
 .header {
   display: flex;
   flex-direction: column;
@@ -13,6 +17,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* ヒーロー画像 */
+.hero {
+  width: 100%;
 }
 
 .backToHome {

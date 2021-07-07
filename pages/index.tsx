@@ -23,10 +23,14 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      <div className={styles.hero} >
+        <Image src={"/images/img.jpg"} width={1235 } height={823} layout="responsive"/>
+      </div>
+
       <section className={utilStyles.headingMd}>
         <h1 className={styles.h1} >タイトル</h1>
         <Image src={"/images/profile.jpg"} width={200} height={200} />
-        <Image src={"/images/img.jpg"} width={1235 } height={823} layout="responsive"/>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
