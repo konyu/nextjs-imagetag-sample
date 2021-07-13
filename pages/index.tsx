@@ -30,7 +30,7 @@ export default function Home({
 
       <section className={utilStyles.headingMd}>
         <h1 className={styles.h1} >タイトル</h1>
-        <Image src={"/images/profile.jpg"} width={200} height={200} />
+        <Image src={"/images/profile.jpg"} width={200} height={200} layout="intrinsic"/>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
